@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // API base URL
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://smart-election-assistantt.onrender.com/api/steps';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://smart-election-assistantt.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
