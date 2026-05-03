@@ -137,7 +137,7 @@ npm test
 
 # Run with coverage
 npm test -- --coverage
-```
+
 
 ---
 
@@ -215,119 +215,13 @@ npm test -- --coverage
 
 ---
 
-## DIRECTORY STRUCTURE
-
-```
-smart-election-assistant/
-├── backend/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── main.py                 # Main FastAPI application
-│   │   ├── config.py               # Configuration
-│   │   ├── models/
-│   │   │   ├── __init__.py
-│   │   │   └── schemas.py          # Pydantic models
-│   │   ├── routes/
-│   │   │   ├── __init__.py
-│   │   │   ├── chat.py             # Chat routes
-│   │   │   └── data.py             # Data routes
-│   │   ├── services/
-│   │   │   ├── __init__.py
-│   │   │   ├── chatbot_service.py  # Gemini integration
-│   │   │   ├── intent_detector.py  # Intent detection
-│   │   │   └── data_service.py     # Data retrieval
-│   │   └── database/
-│   │       ├── __init__.py
-│   │       └── db_setup.py         # Database configuration
-│   ├── tests/
-│   │   ├── conftest.py             # Test configuration
-│   │   ├── test_endpoints.py       # Endpoint tests
-│   │   └── test_services.py        # Service tests
-│   ├── .env                        # Environment variables
-│   └── requirements.txt             # Python dependencies
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ChatWindow.js       # Main chat component
-│   │   │   ├── MessageBubble.js    # Message display
-│   │   │   ├── InputBox.js         # Input field
-│   │   │   ├── LoadingIndicator.js # Loading state
-│   │   │   ├── StepsCard.js        # Steps display
-│   │   │   ├── TimelineCard.js     # Timeline display
-│   │   │   └── *.css               # Component styles
-│   │   ├── services/
-│   │   │   └── api.js              # API integration
-│   │   ├── pages/
-│   │   ├── App.js                  # Main App component
-│   │   ├── index.js                # React entry point
-│   │   └── index.css               # Global styles
-│   ├── public/
-│   │   └── index.html              # HTML template
-│   ├── .env                        # Frontend config
-│   └── package.json                # Node dependencies
-│
-└── README.md                        # This file
-```
-
----
-
-## SECURITY FEATURES
-
-1. **Input Validation**
-   - Max input length: 1000 characters
-   - Injection attack prevention
-   - XSS protection
-
-2. **Environment Variables**
-   - API keys stored in .env
-   - Not committed to git
-   - Default .env file with empty keys
-
-3. **Error Handling**
-   - Safe error messages
-   - No sensitive data exposure
-   - Proper HTTP status codes
-
-4. **Database**
-   - SQLite for lightweight data storage
-   - No sensitive data stored
-   - FAQ and chat history only
-
----
-
-## PERFORMANCE OPTIMIZATION
-
-1. **Caching**
-   - Static responses cached
-   - FAQ data in database
-
-2. **Async Operations**
-   - FastAPI async/await
-   - Non-blocking API calls
-
-3. **Frontend**
-   - React component optimization
-   - Lazy loading
-   - Efficient re-renders
-
----
 
 
 
 
 
-**npm dependencies issue:**
-```bash
-rm -rf node_modules package-lock.json
-npm install
-```
 
-**CORS errors:**
-- Make sure backend is running on port 8000
-- Check CORS_ORIGINS in backend `.env`
 
----
 
 ## DEPLOYMENT
 
@@ -351,12 +245,5 @@ npm install
 
 
 
-
-
-
-
-
-
----
 
 **Happy Voting! 🇮🇳**
