@@ -12,7 +12,7 @@ REM Check Python
 echo Checking Python installation...
 python --version >nul 2>&1
 if %errorlevel% neq 0 (
-    echo ❌ Python is not installed. Please install Python 3.8+
+    echo  Python is not installed. Please install Python 3.8+
     exit /b 1
 )
 for /f "tokens=*" %%A in ('python --version') do echo ✅ Python found: %%A

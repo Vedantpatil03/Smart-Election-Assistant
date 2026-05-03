@@ -1,4 +1,4 @@
-# Smart Election Assistant - Setup & Run Instructions
+# Smart Election Assistant 
 
 ## Project Overview
 Smart AI Election Assistant is a comprehensive full-stack application designed to help Indian citizens understand the election process, voting timeline, and steps in a simple, multilingual, and accessible way.
