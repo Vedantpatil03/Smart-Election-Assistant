@@ -1,0 +1,52 @@
+# .gitignore for Smart Election Assistant
+
+# Backend
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+backend/.env
+backend/venv/
+backend/env/
+backend/.vscode/
+backend/.idea/
+backend/*.egg-info/
+backend/dist/
+backend/build/
+backend/*.db
+backend/*.sqlite
+backend/tests/__pycache__/
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.vscode/
+frontend/.idea/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

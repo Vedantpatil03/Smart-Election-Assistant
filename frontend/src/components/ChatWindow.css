@@ -1,0 +1,119 @@
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(102, 126, 234, 0.16);
+  border-radius: 22px;
+  box-shadow: 0 16px 34px rgba(38, 55, 111, 0.08);
+  overflow: hidden;
+}
+
+.chat-header {
+  background: linear-gradient(135deg, #5f73da 0%, #4f8bd6 100%);
+  color: white;
+  padding: 20px 22px;
+}
+
+.chat-header h1 {
+  margin: 0 0 15px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.chat-controls {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.chat-controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.chat-controls select,
+.chat-controls input[type="checkbox"] {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+}
+
+.chat-controls select option {
+  background: #667eea;
+  color: white;
+}
+
+.messages-container {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 18px 20px;
+  background: linear-gradient(180deg, #fbfcff 0%, #f4f7ff 100%);
+}
+
+.messages-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.messages-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 768px) {
+  .chat-window {
+    height: auto;
+  }
+
+  .chat-header h1 {
+    font-size: 20px;
+  }
+
+  .chat-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .messages-container {
+    padding: 15px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-contrast: more) {
+  .chat-window {
+    border: 2px solid #000;
+  }
+
+  .chat-header {
+    background: #000;
+    color: #fff;
+  }
+
+  .messages-container {
+    background: #fff;
+  }
+
+  .chat-controls select,
+  .chat-controls input[type="checkbox"] {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+}
