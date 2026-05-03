@@ -24,7 +24,7 @@ class Settings:
     DEBUG: bool = os.getenv("DEBUG", "True").lower() == "true"
     
     # CORS
-    CORS_ORIGINS: List[str] = ["http://localhost:3000", "http://localhost:8000"]
+    CORS_ORIGINS: List[str] = ["http://localhost:3000", "https://smart-election-assistant-sable.vercel.app/"]
     
     # Languages
     SUPPORTED_LANGUAGES: List[str] = ["en", "hi", "mr"]
