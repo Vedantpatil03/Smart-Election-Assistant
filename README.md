@@ -1,11 +1,11 @@
 # Smart Election Assistant 
 
 ## Project Overview
-Smart AI Election Assistant is a comprehensive full-stack application designed to help Indian citizens understand the election process, voting timeline, and steps in a simple, multilingual, and accessible way.
+An AI Powered Smart Election Assistant is a comprehensive Full-stack application designed to help Indian citizens understand the election process, voting timeline, and steps in a simple, multilingual, and accessible way.
 
 ---
 
-## PREREQUISITES
+
 
 ### Required Software
 - Python 3.8+
@@ -13,17 +13,13 @@ Smart AI Election Assistant is a comprehensive full-stack application designed t
 - npm 8+
 - Git
 
-### API Keys (Get Before Running)
-1. **Google Gemini API Key**
+### API Key (Get Before Running)
+. **Google Gemini API Key**
    - Visit: https://makersuite.google.com/app/apikeys
    - Create a new project
    - Generate API key for Gemini API
    - Keep it safe (will be added to .env later)
 
-2. **Google Maps API Key** (Optional)
-   - Visit: https://cloud.google.com/maps-platform
-   - Enable Maps JavaScript API
-   - Create API key
 
 
 ---
@@ -335,14 +331,14 @@ npm install
 
 ## DEPLOYMENT
 
-### Backend Deployment (Heroku/Azure)
+### Backend Deployment (Render)
 
 1. Create requirements.txt (done)
-2. Create Procfile:
+
    ```
    web: uvicorn app.main:app --host 0.0.0.0 --port $PORT
    ```
-3. Deploy using platform's CLI
+2. Deploy using platform's CLI
 
 ### Frontend Deployment (Netlify/Vercel)
 
